@@ -1,8 +1,8 @@
-package org.coursera.algorithm.part1.lesson1;
+package org.coursera.algorithm.part1.week1;
 
 import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 
-public class Percolation {
+public class PercolationWithBackWash {
 
     private final WeightedQuickUnionUF grid;
     private final boolean[][] openedGrid;
@@ -11,7 +11,7 @@ public class Percolation {
     private final int virtualTop;
     private final int virtualBottom;
     // creates n-by-n grid, with all sites initially blocked
-    public Percolation(int n) {
+    public PercolationWithBackWash(int n) {
         if (n <= 0)
             throw new IllegalArgumentException("n should be greater 0");
         this.dimension = n;

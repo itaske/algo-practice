@@ -1,4 +1,4 @@
-package org.coursera.algorithm.part1.lesson1;
+package org.coursera.algorithm.part1.week1;
 
 import edu.princeton.cs.algs4.StdOut;
 import edu.princeton.cs.algs4.StdRandom;
@@ -17,9 +17,9 @@ public class PercolationStats {
 
         this.trials = trials;
         means = new double[trials];
-        Percolation percolation;
+        PercolationWithBackWash percolation;
         for (int i = 0; i < trials; i++) {
-            percolation = new Percolation(n);
+            percolation = new PercolationWithBackWash(n);
             while (!percolation.percolates()) {
                 int row = StdRandom.uniformInt(1, n+1);
                 int col = StdRandom.uniformInt(1, n+1);
